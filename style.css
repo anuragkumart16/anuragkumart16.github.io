@@ -1,0 +1,11 @@
+.heading{
+  text-align: center;
+}
+.primary-outline{
+  background-color: blue;
+  color: white;
+  border-radius: 6px;
+  height: 40px;
+  width: 200px;
+  text-decoration: none;
+}
