@@ -1,0 +1,25 @@
+* {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+nav{
+    background-color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -4px -1px 13px 0px;
+}
+.inactive{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+.active{
+    text-decoration: underline 7px;
+    text-decoration-color: red;
+    color: black;
+}
