@@ -39,73 +39,79 @@ body {
   align-items: center;
 }
 
-.heading{
-  /* font-family: cursive; */
-  font-size: 30px;
-  border-bottom:2px solid black ;
-  padding: 20px 0px;
-}
-.text{
-  padding: 10px 0px;
-}
+
+/* main tag holders*/
 .container{
-  height: 80vh;
-  margin: 40px 60px;
-  box-shadow: 1px 2px 8px -2px;
+  box-shadow: 0px 2px 5px -1px;
+  margin: 40px 10px;
 }
-.design{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  top: 0%;
-  left: 0%;
+.job ,
+.message,
+.contact,
+.left,
+.right,
+.project{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.circle{
-  position: relative;
-  top: -45%;
-  left: -17%;
-  height: 30vh;
-  width: 30vh;
-  background-image:linear-gradient(to right,#2d2d2d,#ffffff);
-  border-radius : 1000px;
-  opacity: 45%;
+.job,.message,.contact,.project{
+  margin: 20px 10px;
 }
-.square{
-  position: relative;
-  height: 44vh;
-  width: 43vh;
-  border-radius: 25px;
-  background-image: linear-gradient(to top,#c0c0c0,#ffffff);
-  top: 31%;
-  left: 8%;
-  transform: rotate(210deg) ;
-
-}
-.display{
-  position: relative;
-  top: -100%;
-  left: 0%;
-  height: 100%;
-  width: 100%;
-}
-.display p{
-  margin: 0px 85px;
-  font-size: 25px;
+.left,.right,.project{
+  flex-direction: column;
+  margin: 20px 5px;
 }
 
-.cardholder{
- display: flex;
- flex-direction: row-reverse;
- justify-content: space-evenly;
- align-items: center;
 
+/* elements of project div */
+.elements{
+  margin: 20px 20px;
 }
 .card{
- margin: 10px 20px;
- padding: 10px 10px;
- box-shadow: 0px 1px 5px -2px;
- border-radius: 16px;
+  float: left;
+  border: 1px solid;
+  margin: 20px 20px;
+  border-radius: 16px;
+  box-shadow: 0px 1px 6px -2px;
+  width: 200px;
+  height: 250px;
 }
+
+
+
+
+/* images and illustration */
+.ill_dev{
+  height: auto;
+  width: 85%;
+}
+.ill_message{
+  height: auto;
+  width: 70%;
+}
+.ill_contact{
+  height: auto;
+  width: 100%;
+}
+
+
+
+/* text size and decoration */
+h3{
+  margin: 10px 10px;
+  font-size: 2.9vw;
+}
+.p{
+  font-size: 2.9vw;
+  margin: 10px 10px;
+}
+.heading{
+  margin: 10px 10px;
+  font-size: 5vw;
+}
+
+
 
 
 /* footer */
@@ -163,20 +169,7 @@ hr{
   .icon{
     display: block;
   }
-
-  .container{
-    margin: 40px 10px;
-    height: fit-content;
-  }
-  .hero{
-    height: 60vh;
-  }
-  .cardholder{
-    flex-direction: column;
-  }
-  .square{
-    height: 30vh;
-  }
+    
 }
 
 
