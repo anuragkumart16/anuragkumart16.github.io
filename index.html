@@ -17,8 +17,8 @@
         <div class="navdiv-right" id="navdiv-right">
             <strong>
                 <a href="" class="active" id="home">Home</a>
-                <a href="" class="inactive" id="projects">Projects</a>
-                <a href="" class="inactive" id="contact">Contact</a>
+                <a href="index.html#project" class="inactive" id="projects">Projects</a>
+                <a href="index.html#contactme" class="inactive" id="contact">Contact</a>
             </strong>
             <img class="icon" id="icon" src="img/menu_FILL0_wght400_GRAD0_opsz48.png" alt="" onclick="toggle()">
         </div>
@@ -44,9 +44,9 @@
                 </div>
             </div>
             <hr>
-            <div class="contact">
+            <div class="contact" id="contactme">
                 <div class="left" style="display:block;">
-                    <h1 class="heading" style="margin: 10px 10px; border-bottom: black 1px solid;">Contact</h1>
+                    <h1 class="heading" id="contact" style="margin: 10px 10px; border-bottom: black 1px solid;">Contact</h1>
                     <div style="margin: 10px 10px">
 
                         <p class="p">Facebook</p>
@@ -61,20 +61,18 @@
                 </div>
             </div>
             <hr>
-            <div class="project">
+            <div class="project" id="project">
                 <h1 class="heading" style="border-bottom: solid black 1px;">Projects</h1>
                 <div class="elements">
-                    <div class="card">
-                        <h3>Name</h3>
-                        <p class="p">text here</p>
+                    <div class="card" onclick="calculator()">
+                        <img class="project_img" src="/project_img/calculator.png" alt="">
+                        <h3>Calculator</h3>
+                        <p class="p">A calculator calculating sums.</p>
                     </div>
-                    <div class="card">
-                        <h3>Name</h3>
-                        <p class="p">text here</p>
-                    </div>
-                    <div class="card">
-                        <h3>Name</h3>
-                        <p class="p">text here</p>
+                    <div class="card" onclick="login()">
+                        <img class="project_img" src="/project_img/login.png" alt="">
+                        <h3>Login Page</h3>
+                        <p class="p">Login Page to log yourself in</p>
                     </div>
                 </div>
             </div>
@@ -82,9 +80,9 @@
     </main>
     <footer>
         <div class="footnav">
-            <a href="">Home</a>|
-            <a href="">Projects</a>|
-            <a href="">Contact</a>
+            <a href="#">Home</a>|
+            <a href="#project">Projects</a>|
+            <a href="#contactme">Contact</a>
         </div>
         <div class="developer">
             <h3>Design And Code</h3>
@@ -97,6 +95,14 @@
         </div>
     </footer>
     <script src="javascript/script.js"></script>
+    <script>
+        function calculator(){
+            window.open("/projects/calculator.html","_self");
+        }
+        function login(){
+            window.open("/projects/login.html","_self");
+        }
+    </script>
 </body>
 
 </html>
