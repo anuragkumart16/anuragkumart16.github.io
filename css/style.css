@@ -207,7 +207,9 @@ hr {
     display: block;
   }
 
-  .job,
+  .job{
+    flex-direction: column-reverse;
+  }
   .message,
   .contact,
   .left,
@@ -221,6 +223,7 @@ hr {
   .p{
     font-size: 120%;
     padding: 10px 0px;
+    margin: 10px 10px
   }
   h3{
     font-size: 150%;
@@ -233,7 +236,7 @@ hr {
   }
   .card{
     width: 290px;
-    height: 250px;
+    height: fit-content;
   }
   .project_img{
     width: 265px;

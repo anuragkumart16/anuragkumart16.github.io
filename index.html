@@ -1,108 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anurag Kumar Tiwari</title>
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-    <nav class="nav" id="nav">
-        <div class="navdiv-left" id="navdiv-left">
-            <p id="hehe">Anurag Kumar Tiwari</p>
-        </div>
-        <div class="navdiv-right" id="navdiv-right">
-            <strong>
-                <a href="" class="active" id="home">Home</a>
-                <a href="index.html#project" class="inactive" id="projects">Projects</a>
-                <a href="index.html#contactme" class="inactive" id="contact">Contact</a>
-            </strong>
-            <img class="icon" id="icon" src="img/menu_FILL0_wght400_GRAD0_opsz48.png" alt="" onclick="toggle()">
-        </div>
-    </nav>
-    <main>
-        <div class="container">
-            <div class="job">
-                <div class="left">
-                    <p class="p" style="border-bottom: black 1px solid;">Hello, I am Anurag Kumar Tiwari</p>
-                    <h1 class="heading">Web Designer And Developer</h1>
-                </div>
-                <div class="right">
-                    <img class="ill_dev" src="img/10798281_19362653.jpg" alt="">
-                </div>
-            </div>
-            <hr>
-            <div class="message">
-                <div class="left">
-                    <img src="img/5566767_2892359.jpg" alt="" class="ill_message">
-                </div>
-                <div class="right">
-                    <p style="margin: 0px 30px;" class="p">"Peaceful and user-friendly designing adorned with working elements"</p>
-                </div>
-            </div>
-            <hr>
-            <div class="contact" id="contactme">
-                <div class="left" style="display:block;">
-                    <h1 class="heading" id="contact" style="margin: 10px 10px; border-bottom: black 1px solid;">Contact</h1>
-                    <div style="margin: 10px 10px">
-
-                        <p class="p">Facebook</p>
-                        <p class="p">Instagram</p>
-                        <p class="p">Twitter</p>
-                        <p class="p">Email</p>
-                    </div>
-
-                </div>
-                <div class="right">
-                    <img src="img/20286028_6212133.jpg" alt="" class="ill_contact">
-                </div>
-            </div>
-            <hr>
-            <div class="project" id="project">
-                <h1 class="heading" style="border-bottom: solid black 1px;">Projects</h1>
-                <div class="elements">
-                    <div class="card" onclick="calculator()">
-                        <img class="project_img" src="/project_img/calculator.png" alt="">
-                        <h3>Calculator</h3>
-                        <p class="p">A calculator calculating sums.</p>
-                    </div>
-                    <div class="card" onclick="login()">
-                        <img class="project_img" src="/project_img/login.png" alt="">
-                        <h3>Login Page</h3>
-                        <p class="p">Login Page to log yourself in</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="footnav">
-            <a href="#">Home</a>|
-            <a href="#project">Projects</a>|
-            <a href="#contactme">Contact</a>
-        </div>
-        <div class="developer">
-            <h3>Design And Code</h3>
-            <p>Anurag Kumar Tiwari</p>
-            <P>Phone: 7525870801</P>
-            <p>Email: anuragkumartiwari16@gmail.com</p>
-        </div>
-        <div class="rights">
-            <h2>All Rights Reserved &#169</h2>
-        </div>
-    </footer>
-    <script src="javascript/script.js"></script>
-    <script>
-        function calculator(){
-            window.open("/projects/calculator.html","_self");
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *{
+            margin: 0px 0px;
+            padding: 0px 0px;
+            box-sizing: border-box;
         }
-        function login(){
-            window.open("/projects/login.html","_self");
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #3498db;
+            height: 200px;
+            width: 300px;
+            box-shadow: 0px 1px 4px 0px;
+            margin: 0px 50px;
+            border-radius: 8px;
+        }
+        .btn{
+            color: #ffffff;
+            background-color: #333333;
+            height: 30px;
+            width: 170px;
+            border: 0px;
+            border-radius: 5px;
+            padding: 0px 0px;
+            margin: 10px 10px;
+            /* box-shadow: 1px 1px 1px 1px black; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <button class="btn" onclick="anuragclicl()">Visit Anurag's Website</button>
+            <button class="btn" onclick="newproject()">See His Current Project</button>
+        </div>
+    </div>
+    <script>
+        function anuragclicl(){
+            window.open("anurag'swebsite.html","_self")
+        }
+        function newproject(){
+            window.open("projects/games.html","_self")
         }
     </script>
 </body>
-
 </html>
