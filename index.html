@@ -2,62 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Rate</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
         *{
-            margin: 0px 0px;
-            padding: 0px 0px;
-            box-sizing: border-box;
+            padding: 0px 0px ;
+            margin: 10px 10px;            
         }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         .container{
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f8f8f8;
-        }
-        .box{
-            display: flex;
-            align-items: center;
-            justify-content: center;
             flex-direction: column;
-            background-color: #3498db;
-            height: 200px;
-            width: 300px;
-            box-shadow: 0px 1px 4px 0px;
-            margin: 0px 50px;
-            border-radius: 8px;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+            width: fit-content;
+            box-shadow: 0px 0px 3px -1px;
+            padding: 10px 20px;
         }
-        .btn{
-            color: #ffffff;
-            background-color: #333333;
-            height: 30px;
-            width: 170px;
-            border: 0px;
+        h1{
+            font-family: 'Dancing Script', cursive;
+            font-size: 10vh;
+            border-bottom: 1px solid black;
+        }
+
+        .text{
+            font-family: 'Open Sans', sans-serif;
+        }
+        .inputandbtnholder{
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+
+        }
+        input{
+            padding: 10px 10px;
+        }
+        button{
+            width: 14vw;
+            padding: 10px 0px;
+            background-color: white;
+            border: 1px solid black;
             border-radius: 5px;
-            padding: 0px 0px;
-            margin: 10px 10px;
-            /* box-shadow: 1px 1px 1px 1px black; */
+        }
+        button:hover{
+            color: white;
+            background-color: black;
+
         }
     </style>
 </head>
 <body>
     <div class="container">
-
-        <div class="box">
-            <button class="btn" onclick="anuragclicl()">Visit Anurag's Website</button>
-            <button class="btn" onclick="newproject()">See His Current Project</button>
+        <h1>Rateit</h1>
+        <h3 class="text">Login</h3>
+        <form action="POST"></form>
+        <div class="inputandbtnholder">
+            <input type="text" class="text" name="username" placeholder="Enter Your Username">
+            <input type="password" class="text" name="password" placeholder="Enter your Password">
+            <button class="text" type="submit">Login</button>
         </div>
+        </form>
+        <p class="text">Don't have Account?<a href="/signup/">Signup</a></p>
     </div>
     <script>
-        function anuragclicl(){
-            window.open("anurag'swebsite.html","_self")
-        }
-        function newproject(){
-            window.open("projects/games.html","_self")
-        }
+
     </script>
 </body>
 </html>
