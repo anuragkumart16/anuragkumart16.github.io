@@ -17,7 +17,7 @@
         <div class="navdiv-right" id="navdiv-right">
             <strong>
                 <a href="" class="active" id="home">Home</a>
-                <a href="index.html#project" class="inactive" id="projects">Projects</a>
+                <a href="projects/projects.html" class="inactive" id="projects">Projects</a>
                 <a href="index.html#contactme" class="inactive" id="contact">Contact</a>
             </strong>
             <img class="icon" id="icon" src="img/menu_FILL0_wght400_GRAD0_opsz48.png" alt="" onclick="toggle()">
@@ -64,6 +64,15 @@
             <div class="project" id="project">
                 <h1 class="heading" style="border-bottom: solid black 1px;">Projects</h1>
                 <div class="elements">
+
+                    <!-- project button goes here -->
+                    <div class="card" onclick="project_open()">
+                        <!-- <img class="project_img" src="/project_img/calculator.png" alt=""> -->
+                        <h3>Projects</h3>
+                        <p class="p">Click here to navigate for my projects</p>
+                    </div>
+
+<!-- 
                     <div class="card" onclick="calculator()">
                         <img class="project_img" src="/project_img/calculator.png" alt="">
                         <h3>Calculator</h3>
@@ -78,7 +87,7 @@
                         <img class="project_img" src="/project_img/login.png" alt="">
                         <h3>Games</h3>
                         <p class="p">Direct download links for old PC Games</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -101,6 +110,9 @@
     </footer>
     <script src="javascript/script.js"></script>
     <script>
+        function project_open(){
+            window.open("/projects/projects.html","_self");
+        }
         function calculator(){
             window.open("/projects/calculator.html","_self");
         }
