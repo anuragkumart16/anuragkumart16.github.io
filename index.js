@@ -17,3 +17,7 @@ function ig(){
  function linkedin(){
     window.location.href='https://www.linkedin.com/in/anurag-kumar-tiwari-915096262/';
  }
+
+ function currentproject(){
+   window.location.href="https://mindslinger.github.io";
+ }
