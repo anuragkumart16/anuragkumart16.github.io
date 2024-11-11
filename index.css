@@ -89,10 +89,42 @@
     background-color: black;
     color: white;
     width: calc((45vw - 120px)/2);
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding: 10px 0px;
+    border-radius: 5px;
     border: 0px;
     margin-right: 30px;
     font-family: "Open Sans",sans-serif;
 
 }
+
+/* For devices up to 600px wide */
+@media (max-width: 600px) {
+    /* CSS rules for mobile */
+   .container{
+    flex-direction: column;
+    margin: 1vh;
+   }
+   .image{
+    height: 30vh;
+    /* box-shadow: 0px 0px 2px 0px; */
+   }
+   .heading{
+    font-size: 5.9vw;
+   }
+   .normal{
+    padding: 10px 25px;
+    width: max-content;
+   }
+   .sociallink{
+    margin-top: 0px;
+   }
+   .introholder{
+    margin: 14px 20px;
+   }
+   .head{
+    margin-bottom: 5px;
+   }
+   .leftpane,.rightpane{
+    height: 80vh;
+   }
+  }
